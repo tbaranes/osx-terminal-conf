@@ -16,7 +16,7 @@ alias la="ls -la -color"
 alias ne="emacs -nw"
 alias clean="find . -name '*~' -delete"
 alias svnrev="svn revert --recursive"
-alias karafun="cd ~/Documents/Workspace/Recisio/KaraFun/Karafun"
+alias karafun="cd ~/Documents/Workspace/Recisio/KaraFun/KaraFun"
 alias karaokecom="cd ~/Documents/Workspace/Recisio/karaoke-com/karaoke-com"
 alias xcode_plugins_update="find ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -name Info.plist -maxdepth 3 | xargs -I{} defaults write {} DVTPlugInCompatibilityUUIDs -array-add `defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID`"
 
@@ -56,3 +56,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+
+# OPAM configuration
+. /Users/Tom/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
